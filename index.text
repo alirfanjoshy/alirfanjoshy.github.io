@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Irfan's Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Al Irfan's Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background Image -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm Al Irfan, a passionate web developer. Check out my projects below!</p>
+            <button id="viewProjectsBtn">View Projects</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Al Irfan's Picture" class="profile-pic">
+            <div>
+                <p>Hello! I'm Al Irfan, a web developer with a knack for creating stunning and functional websites. Let's build something amazing together!</p>
+                <a href="Resume.pdf" download class="resume-btn">Download My Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="images/project1-thumbnail.jpg" alt="Project 1 Thumbnail" class="project-thumbnail">
+            <h3>Project 1</h3>
+            <p>A brief description of Project 1. This could include the technologies used and the goals of the project.</p>
+            <a href="https://link-to-project1.com" target="_blank" class="project-link">View Project</a>
+        </div>
+        <div class="project">
+            <img src="images/project2-thumbnail.jpg" alt="Project 2 Thumbnail" class="project-thumbnail">
+            <h3>Project 2</h3>
+            <p>A brief description of Project 2. This could include the technologies used and the goals of the project.</p>
+            <a href="https://link-to-project2.com" target="_blank" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email me at <a href="mailto:al.irfan.joshy01@gmail.com">al.irfan.joshy01@gmail.com</a></p>
+        <p>Call me at <a href="tel:+16467320515">646-732-0515</a></p>
+        <p>&copy; 2024 Al Irfan's Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

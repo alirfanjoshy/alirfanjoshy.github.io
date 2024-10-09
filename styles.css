@@ -1,0 +1,190 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #FF6347, #FFD700);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideInDown 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8A2BE2;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('city.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+button#viewProjectsBtn {
+    padding: 15px 40px;
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#viewProjectsBtn:hover {
+    background-color: #FF6347;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FF6347;
+    animation: bounceIn 1.5s ease-out;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-btn:hover {
+    background-color: #FF6347;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #FF6347, #FFD700);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.project-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #8A2BE2;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+footer a:hover {
+    color: #FF6347;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
